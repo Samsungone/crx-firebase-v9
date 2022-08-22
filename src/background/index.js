@@ -4,16 +4,18 @@ import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWith
 
 // Set the configuration for your app
 // TODO: Replace with your project's config object
-const firebaseConfig = {
-    apiKey: ".....",
-    authDomain: ".....firebaseapp.com",
-    databaseURL: "https://<YOUR FIREBASE>.firebaseio.com ",
-    projectId: "......",
-    storageBucket: "......appspot.com",
-    messagingSenderId: ".....",
-    appId: "1:.....:web:......"
-  };
-const app = initializeApp(firebaseConfig);
+var firebaseConfig = {
+  apiKey: "AIzaSyAtHERv0rX5dDBjRvnbvmweI8ug02N5oPc",
+  authDomain: "mv3firebase.firebaseapp.com",
+  databaseURL: "https://mv3firebase-default-rtdb.firebaseio.com",
+  projectId: "mv3firebase",
+  storageBucket: "mv3firebase.appspot.com",
+  messagingSenderId: "783360301030",
+  appId: "1:783360301030:web:bd3d10c8baf33f7c856827",
+  measurementId: "G-J9C547PKZW"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 // FIREBASE DATABASE
 const dbRef = ref(getDatabase(app));
