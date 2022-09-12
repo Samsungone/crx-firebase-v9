@@ -46,6 +46,6 @@ try {
     });
 
     console.log('background script logic here...')
-  } catch (e){
+} catch (e){
     console.log(e);
-  }
+}
