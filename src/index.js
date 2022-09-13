@@ -1,6 +1,7 @@
-try {
+console.log("yo shorty SUPER DUPER COOL BROrer")
 
-    import { initializeApp } from 'firebase/app';
+   
+   import { initializeApp } from 'firebase/app';
     import { getDatabase, ref, child, get } from "firebase/database";
     import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 
@@ -45,7 +46,4 @@ try {
       }
     });
 
-    console.log('background script logic here...')
-} catch (e){
-    console.log(e);
-}
+    console.log('um background script logic here...')
