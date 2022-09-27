@@ -1,6 +1,5 @@
 import path from 'path'
 
-import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import replace from '@rollup/plugin-replace'
 import resolve from '@rollup/plugin-node-resolve'
@@ -26,11 +25,6 @@ export default {
     replace({
       preventAssignment: true,
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-    }),
-    babel({
-      // Do not transpile dependencies
-      ignore: ['node_modules'],
-      babelHelpers: 'bundled',
     }),
     resolve(),
     commonjs(),

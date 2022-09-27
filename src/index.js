@@ -1,9 +1,11 @@
 console.log("yo shorty SUPER DUPER COOL BROrer")
 
+
    
-   import { initializeApp } from 'firebase/app';
+    import { initializeApp } from 'firebase/app';
     import { getDatabase, ref, child, get } from "firebase/database";
     import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+
 
     // Set the configuration for your app
     // TODO: Replace with your project's config object
@@ -46,4 +48,4 @@ console.log("yo shorty SUPER DUPER COOL BROrer")
       }
     });
 
-    console.log('um background script logic here...')
+    console.log('um background script logic here....')
